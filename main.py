@@ -141,10 +141,6 @@ def get_m31_position():
     crd = altaz_coord.transform_to('icrs')  # Or 'fk5', 'galactic', etc.
     print(f"RA:     {crd.ra.hms.h:02.0f}h {crd.ra.hms.m:02.0f}m {crd.ra.hms.s:05.2f}s")
     print(f"Dec:    {crd.dec.dms.d:02.0f}d {abs(crd.dec.dms.m):02.0f}m {abs(crd.dec.dms.s):05.2f}s")
-    # 5. Print the results
-   # print(f"Altitude: {new_coord.ra}, Azimuth: {icrs_coord.dec}")
-  #  print(f"Equatorial (ICRS) RA: {new_coord.ra}")
-   # print(f"Equatorial (ICRS) Dec: {new_coord.dec}")
 
 if __name__ == "__main__":
     get_m31_position()
